@@ -1,65 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strive Fit </title> 
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StriveFit – Personal Training & Wellness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body> <h1>Strive Fit</h1>
-      
-  
+  <!-- === Navbar === -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.us.html">About</a></li>
+      <li><a href="about.html">About </a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="enquiry.html">Enquiry</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  
+  <!-- === Hero Section with Background === -->
+  <header class="hero-section" id="home">
+    <div class="hero-content">
+      <h1>Welcome to <span>StriveFit</span></h1>
+      <p>Your journey to strength and wellness starts here.</p>
+      <a href="enquiry.html" class="btn">Join Now</a>
 
-      <section>
+    </div>
+  </header>
 
-        <center>
-        <h1>Welcome to StriveFit</h1>
+  <!-- === About Section === -->
+  <section class="container card animate" id="about">
+    <h2>About Us</h2>
+    <p>StriveFit is a modern training studio focused on performance, accountability, and transformation. From elite coaching to wellness tracking, we've got your goals covered.</p>
+  </section>
 
-          <img width="200" src="images/pexels-cottonbro-4761779.jpg" alt="">
-        </center>
-        
+  <!-- === Services Section === -->
+  <section class="container card animate" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>1-on-1 Personal Training</li>
+      <li>Group HIIT Classes</li>
+      <li>Body Composition Tracking</li>
+      <li>Online Coaching Programs</li>
+    </ul>
+  </section>
 
-
-        <p>Your journey to a healthier, stronger you starts here. We offer personal training and wellness plans tailored to your goals and lifestyle.</p>
-        <a href="services.html">Explore our services</a>
-      </section>
-
-      <section>
-        <h2>Why StriveFit?</h2>
-        <p>At StriveFit, we believe in a holistic approach to health and fitness. Whether you're looking to build strength, lose weight, or improve your nutrition, our certified coaches and wellness experts are here to guide you every step of the way. With flexible programs and real results, your transformation begins with us.</p>
-        <a href="about.us.html">Learn more</a>
-        
-    </section>
+  <!-- === Contact Section === -->
+  <section class="container card animate" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: infostrivefit@gmail.com</p>
+    <p>Phone: +064 417 1990</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
     
-      
-      <section>
-        <h3>Ready to Get Started?</h3>  
-        <p>Take your first few steps to optimal health and book your free consultation today and take the first step toward your fitness goals.</p>
-        <a href="enquiry.html">Book now</a>
 
-        <center>
-          <img width="200" src="images/pexels-muribotelho-1865131.jpg" alt="">
-            </center>
 
-      </section>
-      
-       
-        
-    
+
+  </section>
+
+  <!-- === Footer === -->
+  <footer>
+    <p>&copy; 2025 StriveFit. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
-
 </html>
 
 

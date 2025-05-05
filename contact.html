@@ -3,49 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | StriveFit</title>
+  <title>Enquiry | StriveFit</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Navigation Menu -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.us.html">About</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="enquiry.html">Enquiry</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    
+    
   </nav>
 
+  <!-- Page Header -->
   <header>
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Reach out using the details or form below.</p>
+    <h1>Say hi </h1>
+    <p>Whether you're interested in our training services or want to collaborate, we’d love to hear from you.</p>
   </header>
 
+  <!-- Enquiry Form -->
   <section>
-    <h2>Our Locations</h2>
-    <p><strong>StriveFit Studio – Cape Town:</strong><br>
-    101 Loop Street, Cape Town, 8001<br>
-    Phone: 021 456 7890</p>
-
-    <p><strong>StriveFit Studio – Johannesburg:</strong><br>
-    88 Rosebank Road, Johannesburg, 2196<br>
-    Phone: 011 654 3210</p>
-  </section>
-
-  <section>
-    <h2>Send Us a Message</h2>
     <form action="#" method="post">
       <label for="name">Full Name:</label><br>
       <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Email:</label><br>
+      <label for="email">Email Address:</label><br>
       <input type="email" id="email" name="email" required><br><br>
 
-      <label for="message">Message:</label><br>
+      <label for="enquiry-type">Reach out:</label><br>
+      <select id="enquiry-type" name="enquiry-type" required>
+        <option value="">-- Select an option --</option>
+        <option value="training">Personal Training</option>
+        <option value="nutrition">Nutrition Support</option>
+        <option value="volunteer">Volunteering</option>
+        <option value="partnership">Collaboration / Sponsorship</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="message">Your Message:</label><br>
       <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
-      <button type="submit">Send Message</button>
+      <button type="submit">Submit Request</button>
     </form>
   </section>
 
